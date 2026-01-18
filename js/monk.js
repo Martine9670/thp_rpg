@@ -10,11 +10,10 @@ class Monk extends Personnage {
       console.log("Not enough mana to heal")
       return
     }
-
     this.mana -= 25
     this.hp += 8
     if (this.hp > 8) this.hp = 8
-    console.log("Monk heals for 8 HP")
+    console.log("🧘 Monk heals for 8 HP")
   }
 }
 

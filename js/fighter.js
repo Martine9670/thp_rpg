@@ -11,17 +11,15 @@ class Fighter extends Personnage {
       console.log("Not enough mana for Dark Vision")
       return
     }
-
     this.mana -= 20
     enemy.takeDamage(5)
-    console.log("Dark Vision deals 5 damage")
+    console.log("🛡️ Dark Vision deals 5 dmg")
     this.reduction = 2
   }
 
   takeDamage(amount) {
     let finalDamage = amount - this.reduction
     if (finalDamage < 0) finalDamage = 0
-
     super.takeDamage(finalDamage)
     this.reduction = 0
   }

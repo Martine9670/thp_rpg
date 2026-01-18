@@ -9,7 +9,7 @@ class Berzerker extends Personnage {
     this.dmg += 1
     this.hp -= 1
     if (this.hp < 0) this.hp = 0
-    console.log("Berzerker uses Rage: +1 dmg, -1 hp")
+    console.log("🩸 Berzerker uses Rage: +1 dmg, -1 hp")
   }
 }
 
